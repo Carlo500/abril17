@@ -1,0 +1,6 @@
+<div><ul>@for (a of personas; track a) {<li>{{ a }}</li>}</ul></div>
+<app-ejercicio4h (llamadaPadre)="recibirDato($event)"></app-ejercicio4h>
+<button type="button" (click)="eliminarUltimo()" >Eliminar Ultimo</button><br>
+<button type="button" (click)="mostrarLista()" >Mostrar todos</button><br>
+<button type="button" (click)="filtrarEdades()" >Filtrar por edad</button><br>
+<button type="button" (click)="calcularDoble()" >duplicar edad</button><br>

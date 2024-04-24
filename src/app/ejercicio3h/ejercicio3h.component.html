@@ -1,0 +1,11 @@
+
+<div>
+<label for="Lenguajes">Asignaturas</label><br>
+<select name="Lenguajes" id="lenguajes" [(ngModel)]="modelName">
+    @for (item of lenguajes; track item) {
+        <option ngValue  ={{item}}>{{item}}</option>
+    }
+    
+</select>
+<button (click)="enviarPadre()">Seleccionar</button>
+</div>
